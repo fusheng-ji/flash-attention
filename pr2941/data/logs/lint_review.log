@@ -1,0 +1,12 @@
+Checks recorded during PR-body review for b0986d7 against 3451a2a.
+
+$ uvx ruff@0.11.13 check flash_attn/cute/tile_scheduler.py tests/cute/test_lpt_scheduler.py tests/cute/test_lpt_clc_swizzle.py
+All checks passed!
+
+$ uvx ruff@0.11.13 format --check flash_attn/cute/tile_scheduler.py tests/cute/test_lpt_scheduler.py tests/cute/test_lpt_clc_swizzle.py
+3 files already formatted
+
+$ git diff 3451a2a b0986d7 --check
+No output; exit status 0.
+
+These are local checks of the three changed files, not a hosted CI run.

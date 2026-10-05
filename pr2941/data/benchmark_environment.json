@@ -1,0 +1,145 @@
+{
+  "base_sha": "3451a2a67a24eeed8af54d3c5b8d219577113797",
+  "gpu": "NVIDIA B200",
+  "cuda": "13.0",
+  "torch": "2.13.0+cu130",
+  "packages": {
+    "nvidia-cutlass-dsl": "4.7.1",
+    "quack-kernels": "0.6.5",
+    "apache-tvm-ffi": "0.1.11",
+    "triton": "3.7.1"
+  },
+  "sources": {
+    "main": "bdd2affa3c11480f2a31b03755c43ee5181370a95ac2ef43cd00334d41073896",
+    "patch": "78bde1567bd0805e7c019870c93f0ef253664783ad0bb78cd764ca4fb32e15b2"
+  },
+  "protocol": "paired, alternating order each round; 3 rounds; warmup 25ms, rep 100ms, mean; BF16 causal 1CTA, splits=1, FA_CLC=1; clocks unlocked",
+  "constructors": {
+    "main": [
+      {
+        "d": 64,
+        "pack_gqa": false,
+        "q_stage": 1
+      },
+      {
+        "d": 64,
+        "pack_gqa": false,
+        "q_stage": 2
+      },
+      {
+        "d": 64,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 64,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 96,
+        "pack_gqa": false,
+        "q_stage": 1
+      },
+      {
+        "d": 96,
+        "pack_gqa": false,
+        "q_stage": 2
+      },
+      {
+        "d": 96,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 96,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 128,
+        "pack_gqa": false,
+        "q_stage": 1
+      },
+      {
+        "d": 128,
+        "pack_gqa": false,
+        "q_stage": 2
+      },
+      {
+        "d": 128,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 128,
+        "pack_gqa": true,
+        "q_stage": 2
+      }
+    ],
+    "patch": [
+      {
+        "d": 64,
+        "pack_gqa": false,
+        "q_stage": 1
+      },
+      {
+        "d": 64,
+        "pack_gqa": false,
+        "q_stage": 2
+      },
+      {
+        "d": 64,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 64,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 96,
+        "pack_gqa": false,
+        "q_stage": 1
+      },
+      {
+        "d": 96,
+        "pack_gqa": false,
+        "q_stage": 2
+      },
+      {
+        "d": 96,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 96,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 128,
+        "pack_gqa": false,
+        "q_stage": 1
+      },
+      {
+        "d": 128,
+        "pack_gqa": false,
+        "q_stage": 2
+      },
+      {
+        "d": 128,
+        "pack_gqa": true,
+        "q_stage": 2
+      },
+      {
+        "d": 128,
+        "pack_gqa": true,
+        "q_stage": 2
+      }
+    ]
+  },
+  "shapes": 180,
+  "output_comparisons": "All 180 main/patch outputs bitwise equal; no FP32 reference for performance shapes."
+}

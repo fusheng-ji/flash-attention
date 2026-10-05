@@ -1,0 +1,73 @@
+........................                                                 [100%]
+=============================== warnings summary ===============================
+flash_attn/cute/flash_fwd.py:20
+  <REPOSITORY>/flash_attn/cute/flash_fwd.py:20: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm90.py:18
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm90.py:18: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm100.py:31
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm100.py:31: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm120.py:10
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm120.py:10: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+cute/test_flash_attn_fast.py: 15 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/ast_preprocessor.py:658: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    exec_globals[alias] = getattr(module, attr)
+
+cute/test_flash_attn_fast.py: 10 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgm'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn_fast.py: 10 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 21) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_bwd_sm100FlashAttentionBackwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorg'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn_fast.py: 96 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cute/core.py:5862: DeprecationWarning: Using `struct.scalar` as pointer is deprecated.
+    [llvm_ptr_ty], [self.value], loc=loc, ip=ip
+
+cute/test_flash_attn_fast.py: 12 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cute/core.py:1597: DeprecationWarning: Using `struct.scalar` as pointer is deprecated.
+    return self.value.type
+
+cute/test_flash_attn_fast.py: 12 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cute/core.py:1831: DeprecationWarning: Using `struct.scalar` as pointer is deprecated.
+    _cute_ir.ptrtoint(res_type.mlir_type, self.value, loc=loc, ip=ip)
+
+cute/test_flash_attn_fast.py::test_flash_attn_output[256-256-128-False-1-mqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_output[256-256-128-True-1-mqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-False-mqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-True-mqa-dtype0]
+  <REPOSITORY>/flash_attn/cute/pack_gqa.py:223: DSLOptimizationWarning: This static loop has 64 iterations, which may be very slow to compile, consider using `cutlass.range(..., unroll_full=True)` instead.
+    for m in cutlass.range_constexpr(cute.size(tQsQ.shape[1])):
+
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-64-False-mha-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-64-False-gqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-64-False-mqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-64-True-mha-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-64-True-gqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-64-True-mqa-dtype0]
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmem_o_i641_01'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn_fast.py: 12 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 21) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_bwd_sm100FlashAttentionBackwardSm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi641_Ten'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-False-mha-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-False-gqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-False-mqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-True-mha-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-True-gqa-dtype0]
+cute/test_flash_attn_fast.py::test_flash_attn_varlen_output[256-128-True-mqa-dtype0]
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmem_o_i641_00'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+24 passed, 217 deselected, 187 warnings in 103.08s (0:01:43)

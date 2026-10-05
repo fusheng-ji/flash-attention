@@ -1,0 +1,57 @@
+........................................................................ [ 97%]
+..                                                                       [100%]
+=============================== warnings summary ===============================
+flash_attn/cute/flash_fwd.py:20
+  <REPOSITORY>/flash_attn/cute/flash_fwd.py:20: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm90.py:18
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm90.py:18: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm100.py:31
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm100.py:31: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm120.py:10
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm120.py:10: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+cute/test_flash_attn.py: 16 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/ast_preprocessor.py:658: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    exec_globals[alias] = getattr(module, attr)
+
+cute/test_flash_attn.py: 34 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgm'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn.py::test_flash_attn_sm100_asymmetric_backward[dtype0-False-False-mha-32]
+  <PYTHON_ENV>/lib/python3.12/site-packages/torch/autograd/function.py:625: UserWarning: Accessing the data pointer of FakeTensor is deprecated and will error in PyTorch 2.5. This is almost definitely a bug in your code and will cause undefined behavior with subsystems like torch.compile. Please wrap calls to tensor.data_ptr() in an opaque custom op; If all else fails, you can guard accesses to tensor.data_ptr() on isinstance(tensor, FakeTensor). (Triggered internally at /__w/pytorch/pytorch/c10/core/StorageImpl.cpp:46.)
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+
+cute/test_flash_attn.py: 38 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 21) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_bwd_sm100FlashAttentionBackwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorg'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn.py: 532 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cute/core.py:5862: DeprecationWarning: Using `struct.scalar` as pointer is deprecated.
+    [llvm_ptr_ty], [self.value], loc=loc, ip=ip
+
+cute/test_flash_attn.py: 66 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cute/core.py:1597: DeprecationWarning: Using `struct.scalar` as pointer is deprecated.
+    return self.value.type
+
+cute/test_flash_attn.py: 66 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cute/core.py:1831: DeprecationWarning: Using `struct.scalar` as pointer is deprecated.
+    _cute_ir.ptrtoint(res_type.mlir_type, self.value, loc=loc, ip=ip)
+
+cute/test_flash_attn.py: 32 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmem_o_i641_00'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn.py: 36 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 21) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_bwd_sm100FlashAttentionBackwardSm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi641_Ten'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+74 passed, 415588 deselected, 825 warnings in 375.52s (0:06:15)

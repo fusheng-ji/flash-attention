@@ -1,0 +1,11 @@
+revision,shape,batch,sq,sk,hq,hkv,attempts,passed,min_max_abs_dv_error,max_max_abs_dv_error,exception,message
+baseline,focused,1,129,257,4,4,10,0,1.1074400373727418,1.1074400373727418,,
+baseline,focused,1,129,257,4,2,10,0,,,AssertionError,sdV doesn't fit in sV storage allocation (2-CTA)
+patched,focused,1,129,257,4,4,10,10,0.002929849034971732,0.002929849034971732,,
+patched,focused,1,129,257,4,2,10,10,0.003024591430647594,0.003024591430647594,,
+baseline,reported_shape,2,1024,1024,16,16,10,0,7.541757737931416,7.541757737931416,,
+baseline,reported_shape,2,1024,1024,16,8,10,0,,,AssertionError,sdV doesn't fit in sV storage allocation (2-CTA)
+patched,reported_shape,2,1024,1024,16,16,10,10,0.017480140313294257,0.017480140313294257,,
+patched,reported_shape,2,1024,1024,16,8,10,10,0.018196481673678377,0.018196481673678377,,
+neutral,focused,1,129,257,4,4,10,0,1.1074400373727418,1.1074400373727418,,
+neutral,focused,1,129,257,4,2,10,0,,,AssertionError,sdV doesn't fit in sV storage allocation (2-CTA)

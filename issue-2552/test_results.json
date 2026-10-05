@@ -1,0 +1,26 @@
+[
+  {
+    "source_log": "compile.log",
+    "passed": 74,
+    "fake_tensor": true,
+    "execution_kernel_compiles": null
+  },
+  {
+    "source_log": "execution_main.log",
+    "passed": 48,
+    "fake_tensor": false,
+    "execution_kernel_compiles": 0
+  },
+  {
+    "source_log": "execution_edges.log",
+    "passed": 26,
+    "fake_tensor": false,
+    "execution_kernel_compiles": 0
+  },
+  {
+    "source_log": "existing_backward.log",
+    "passed": 24,
+    "fake_tensor": false,
+    "execution_kernel_compiles": null
+  }
+]

@@ -1,0 +1,13 @@
+# Keep recorded measurements and logs byte-for-byte, including CRLF/spacing.
+pr2941/data/** -text
+pr2941/data/*.csv whitespace=-blank-at-eol,-blank-at-eof
+pr2941/data/logs/*.log whitespace=-blank-at-eol,-blank-at-eof
+# Matplotlib SVG paths contain generated trailing spaces.
+pr2941/figures/*.svg -text whitespace=-blank-at-eol,-blank-at-eof
+pr2941/figures/*.png binary
+pr2941/*.zip binary
+# Preserve issue #2552 evidence and its recorded hashes.
+issue-2552/** -text
+issue-2552/*.csv whitespace=-blank-at-eol,-blank-at-eof
+issue-2552/logs/*.log whitespace=-blank-at-eol,-blank-at-eof
+issue-2552/sass/* whitespace=-blank-at-eol,-blank-at-eof

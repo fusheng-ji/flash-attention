@@ -1,0 +1,89 @@
+{
+  "base_sha": "3451a2a67a24eeed8af54d3c5b8d219577113797",
+  "patch_sha": "b0986d7105356c1d67f692af0292dd4abaeae443",
+  "source_hashes": {
+    "main": "bdd2affa3c11480f2a31b03755c43ee5181370a95ac2ef43cd00334d41073896",
+    "patch": "78bde1567bd0805e7c019870c93f0ef253664783ad0bb78cd764ca4fb32e15b2"
+  },
+  "original_pr": {
+    "url": "https://github.com/Dao-AILab/flash-attention/pull/2941",
+    "head_sha": "bfdc8da2b802216683872a8cac497dfb63e8a2fc",
+    "scheduler_url": "https://github.com/XYX-XYX-XYX/flash-attention/blob/bfdc8da2b802216683872a8cac497dfb63e8a2fc/flash_attn/cute/tile_scheduler.py",
+    "scheduler_sha256": "1af066b27d13dc08d62df1794a3f6d3f0ca23b2179ad02da50eb0404d174f91d"
+  },
+  "main_static_2cta_change": {
+    "pr": 2962,
+    "merge_sha": "85d6dfe3573708b5632915950cd8b069b924ba52",
+    "source_lines": [
+      596,
+      616
+    ]
+  },
+  "api_snapshot_retrieved_at_utc": "2026-10-05T21:51:17.596720+00:00",
+  "claims": [
+    {
+      "claim": "185 CuTe coordinate/exhaustion passes",
+      "files": [
+        "logs/scheduler_probe_gpu.log"
+      ]
+    },
+    {
+      "claim": "68 expanded O/LSE passes; original 32 are included",
+      "files": [
+        "logs/swizzle_expanded_gpu.log",
+        "logs/original_32_gpu.log",
+        "correctness_evidence.jsonl"
+      ]
+    },
+    {
+      "claim": "79 existing regression passes and two skips",
+      "files": [
+        "logs/existing_forward_regressions.log"
+      ]
+    },
+    {
+      "claim": "Original PR STATIC 2CTA coordinate regression",
+      "files": [
+        "logs/unfixed_static_regression.log"
+      ]
+    },
+    {
+      "claim": "180 shapes / 1080 timing records",
+      "files": [
+        "benchmark_measurements.csv",
+        "benchmark_per_shape.csv",
+        "benchmark_per_shape.json",
+        "benchmark_summary.json",
+        "benchmark_environment.json"
+      ]
+    },
+    {
+      "claim": "Zero filtered device errors; 41 unresolved unfiltered API reports",
+      "files": [
+        "logs/exhaustion_memcheck_device.log",
+        "logs/exhaustion_memcheck.log",
+        "logs/ledger_memcheck_api.md"
+      ]
+    },
+    {
+      "claim": "Local pinned Ruff checks passed",
+      "files": [
+        "logs/lint_review.log"
+      ]
+    }
+  ],
+  "scope": "Assets only. No product code, test code, reproduction scripts, patch, or PR body is included. The patch commit remains local.",
+  "privacy_processing": {
+    "method": "Replace local usernames, repository, Python environment and user-specific cache paths with placeholders. Numerical measurements and public upstream attribution are preserved.",
+    "original_redacted_log_sha256": {
+      "data/logs/benchmark_progress.log": "4d5678873274926be9c7f7d18eb1db9b40e18714ba63456a875602ecf452a9b2",
+      "data/logs/cache_metadata_final.log": "5e7ee5f86115dfe9b75299f46e052efcd08e1786e0481d666059c76b1093b2a6",
+      "data/logs/exhaustion_memcheck.log": "e19b751f908385d2b83648f98f8a2ae521b8e4146aaf9efaa9066aaa728d8e83",
+      "data/logs/exhaustion_memcheck_device.log": "7876267310199ff82288a987539b8c47fbdb1e1cc5fe19fdd4003c34c67d40da",
+      "data/logs/existing_forward_regressions.log": "7a6f2d65ebbb703f6ec85e17b22aa467e52a4340dd3124027e56f267ded401ba",
+      "data/logs/original_32_gpu.log": "776522ef82e5938a245878356d99b5323cea52a3d1124aa947183f095cc43937",
+      "data/logs/scheduler_probe_gpu.log": "b3aa7ab757461d08cf67875c0c2a3e700b63a2353ad44438041d061ad702df5c",
+      "data/logs/swizzle_expanded_gpu.log": "d36a33dd11c264610a1b89d573591e91ef8c40c5bad3c5e76ef3c8b85357208e"
+    }
+  }
+}

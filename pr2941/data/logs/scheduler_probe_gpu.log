@@ -1,0 +1,22 @@
+........................................................................ [ 38%]
+........................................................................ [ 77%]
+.........................................                                [100%]
+=============================== warnings summary ===============================
+flash_attn/cute/flash_fwd.py:20
+  <REPOSITORY>/flash_attn/cute/flash_fwd.py:20: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm90.py:18
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm90.py:18: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm100.py:31
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm100.py:31: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm120.py:10
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm120.py:10: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+185 passed, 4 warnings in 9.97s

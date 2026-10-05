@@ -1,0 +1,5 @@
+baseline: {"LDTM.x32": 11}
+patched: {"LDTM.x32": 8, "LDTM.x16": 3}
+patched.sass:4901: LDTM.x16
+patched.sass:4983: LDTM.x16
+patched.sass:5043: LDTM.x16

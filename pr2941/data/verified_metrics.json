@@ -1,0 +1,63 @@
+{
+  "base_sha": "3451a2a67a24eeed8af54d3c5b8d219577113797",
+  "patch_sha": "b0986d7105356c1d67f692af0292dd4abaeae443",
+  "performance": {
+    "shapes": 180,
+    "measurements": 1080,
+    "geomean_speedup": 1.0393814485026474,
+    "median_speedup": 1.0122644949304502,
+    "faster": 138,
+    "slower": 42,
+    "max_regression_percent": 3.525855128895672
+  },
+  "correctness": {
+    "unique_tests_passed": 332,
+    "unique_tests_skipped": 2,
+    "original_32_included_in_expanded_68": true,
+    "evidence_records": 76,
+    "unique_olse_test_names": 68,
+    "maximum_observed_out_absolute_error": 0.0078125,
+    "maximum_observed_finite_lse_absolute_error": 1.9550323486328125e-05,
+    "device_memcheck_cases_passed": 5,
+    "device_memcheck_errors": 0,
+    "device_memcheck_api_reporting": "disabled with --report-api-errors no",
+    "unfiltered_sanitizer_api_reports": 41,
+    "api_report_origin": "unresolved",
+    "selections": [
+      {
+        "log_file": "scheduler_probe_gpu.log",
+        "passed": 185,
+        "skipped": 0
+      },
+      {
+        "log_file": "swizzle_expanded_gpu.log",
+        "passed": 68,
+        "skipped": 0
+      },
+      {
+        "log_file": "existing_forward_regressions.log",
+        "passed": 79,
+        "skipped": 2
+      },
+      {
+        "log_file": "exhaustion_memcheck_device.log",
+        "passed": 5,
+        "skipped": 0
+      },
+      {
+        "log_file": "cache_metadata_final.log",
+        "passed": 4,
+        "skipped": 0
+      }
+    ]
+  },
+  "checks": [
+    "complete 180-shape Cartesian matrix",
+    "unique 1080 revision/round records",
+    "all aggregate JSON values recomputed from raw CSV",
+    "all per-shape rounds/medians verified",
+    "baseline and patch sources match recorded hashes and Git revisions",
+    "test and sanitizer counts verified against original logs",
+    "maximum O/LSE errors derived from original JSON evidence"
+  ]
+}

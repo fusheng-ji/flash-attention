@@ -1,0 +1,43 @@
+{
+  "issue": "https://github.com/Dao-AILab/flash-attention/issues/2552",
+  "prior_pr": "https://github.com/Dao-AILab/flash-attention/pull/2780",
+  "prior_pr_closure": "https://github.com/Dao-AILab/flash-attention/pull/2780#issuecomment-5249935357",
+  "measurement_date": "2026-10-05",
+  "baseline_commit": "3451a2a67a24eeed8af54d3c5b8d219577113797",
+  "patched_revision": "Uncommitted local source snapshot identified by the following SHA256 hashes",
+  "patched_source_sha256": {
+    "flash_attn/cute/flash_bwd_sm100.py": "1cfa07ef056e3093355286a607e8be5a0a90200fe95de623b2d6405c4b7a7d2a",
+    "tests/cute/test_flash_attn.py": "55788f292900f33ace2f9356390d177c6d0b4f554bd9b5b9e034b579928ad9f5"
+  },
+  "environment": {
+    "gpu": "NVIDIA B200",
+    "architecture": "SM100",
+    "driver": "580.126.20",
+    "python": "3.12.14",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "nvidia-cutlass-dsl": "4.7.1",
+    "apache-tvm-ffi": "0.1.11",
+    "quack-kernels": "0.6.5"
+  },
+  "log_processing": "Only local repository and Python environment path prefixes were replaced. Numerical values, test results and compiler warnings were preserved.",
+  "sass_processing": "Recorded normalized disassembly excludes instruction addresses and encodings; comparison.diff is the recorded normalized SASS comparison.",
+  "original_log_sha256": {
+    "baseline.log": "d2580a1bc91e86112cd78f658861c28cbe4b0cdf77d670b1a4f219b715d5c183",
+    "patched_artifacts.log": "4390614beed8b3939611be1ec20339dde35b0fcac356deabface019ba5f2faf1",
+    "baseline_original.log": "c820894b7997e5b539c82a5f196a44eed807d710d474a80423883dc377b76bc3",
+    "patched_original.log": "1f63a4be153a1fd012d750fe200882d4e4730d61ce78f129994d88b791757de5",
+    "neutral.log": "f8f76c94638d60ef4baf9d5359f65df2dee213b97ab55f9fe9ffd614984302c0",
+    "compile.log": "6ff44614bb1b3218b9f55ce08880bf02b8ad848440a29c688427d41da7d9e92c",
+    "execution_main.log": "181e3743c454dc0b19a0e3329f967143d8320d177738f8733074589ae32effe5",
+    "execution_edges.log": "18d1c6ce3b036402886c13d8c48334bbffc7bef26269ae821e6c211af0b933f1",
+    "existing_backward.log": "4711b112675a291cd33e435fec97c710ea46dee4ad71dfa3d3a389f38e8e9452",
+    "benchmark.log": "900c1786016c8a8f698c189811dc668d330296042709630818d7b9d1a96d64bc",
+    "kernel_lint.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "kernel_format.log": "fd2299c9f1c6dc869070883e281051bfe93aacf66c1a3b0069f45b4aa410ca50"
+  },
+  "cubin_sha256": {
+    "baseline": "8d3871e418ba699ee27259d377138e924ac895a1e9c8adfbeb06b0b7b887230a",
+    "patched": "54b5762b134cbad31cea20a438a1fbaf36eba4c15ab79487bfa18c7a7762f25f"
+  }
+}

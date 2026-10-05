@@ -1,0 +1,6 @@
+EXPECTED REGRESSION REPRODUCED: original PR does not launch/map STATIC 2CTA clusters.
+Tensor-likes are not equal!
+
+Mismatched elements: 332 / 480 (69.2%)
+Greatest absolute difference: 1002 at index (30, 0, 0, 1)
+Greatest relative difference: inf at index (1, 0, 0, 1)

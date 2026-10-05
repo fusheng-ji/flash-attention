@@ -1,0 +1,85 @@
+........................................................................ [ 88%]
+...ss....                                                                [100%]
+=============================== warnings summary ===============================
+flash_attn/cute/flash_fwd.py:20
+  <REPOSITORY>/flash_attn/cute/flash_fwd.py:20: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm90.py:18
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm90.py:18: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm100.py:31
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm100.py:31: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+flash_attn/cute/flash_fwd_sm120.py:10
+  <REPOSITORY>/flash_attn/cute/flash_fwd_sm120.py:10: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+cute/test_clc_fuzz.py: 20 warnings
+cute/test_flash_attn_hd256_features.py: 1 warning
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/ast_preprocessor.py:658: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    exec_globals[alias] = getattr(module, attr)
+
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_square[3-5-259-259]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_qk_mismatch[3-7-127-513]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_nonaligned[3-7-191-191]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[3-6-2-513]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[7-8-1-259]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[2-8-2-2049]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[512-512-128-128]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[256-1024-64-64]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[128-2048-32-512]
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_None_008'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_square[3-5-259-259]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_qk_mismatch[3-7-127-513]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_nonaligned[3-7-191-191]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[3-6-2-513]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[7-8-1-259]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[2-8-2-2049]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[512-512-128-128]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[256-1024-64-64]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[128-2048-32-512]
+  <REPOSITORY>/flash_attn/cute/tile_scheduler.py:580: DeprecationWarning: Migrated to examples/CuTeDSL/helpers/dynamic_persistent_tile_scheduler.py (BSD-3). The wheel copy will be removed in a future release.
+    return ClcDynamicPersistentTileSchedulerParams(
+
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_square[3-5-259-259]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_qk_mismatch[3-7-127-513]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_nonaligned[3-7-191-191]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[3-6-2-513]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[7-8-1-259]
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[2-8-2-2049]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[512-512-128-128]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[256-1024-64-64]
+cute/test_clc_fuzz.py::TestCLCFallback::test_local_window_with_clc[128-2048-32-512]
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/utils/dynamic_persistent_tile_scheduler.py:421: DeprecationWarning: Migrated to examples/CuTeDSL/helpers/dynamic_persistent_tile_scheduler.py (BSD-3). The wheel copy will be removed in a future release.
+    return ClcDynamicPersistentTileScheduler(
+
+cute/test_clc_fuzz.py: 240 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/utils/dynamic_persistent_tile_scheduler.py:359: DeprecationWarning: Migrated to examples/CuTeDSL/helpers/dynamic_persistent_tile_scheduler.py (BSD-3). The wheel copy will be removed in a future release.
+    return ClcDynamicPersistentTileScheduler(
+
+cute/test_clc_fuzz.py::TestCLCCausal::test_causal_gqa[3-6-2-513]
+  <REPOSITORY>/flash_attn/cute/pack_gqa.py:223: DSLOptimizationWarning: This static loop has 64 iterations, which may be very slow to compile, consider using `cutlass.range(..., unroll_full=True)` instead.
+    for m in cutlass.range_constexpr(cute.size(tQsQ.shape[1])):
+
+cute/test_clc_fuzz.py: 2 warnings
+cute/test_flash_attn_hd256_features.py: 22 warnings
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_None_006'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_clc_fuzz.py::TestCLCHd256::test_varlen_gqa[False]
+cute/test_clc_fuzz.py::TestCLCHd256::test_varlen_gqa[True]
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_Tensorgmemoi64i641_None_00625_Tensorgme'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+cute/test_flash_attn_hd256_features.py::test_flash_attn_hd256_sm100_fwd_features[block_sparse-128-640-mha-noncausal]
+cute/test_flash_attn_hd256_features.py::test_flash_attn_hd256_sm100_fwd_features[block_sparse-128-640-mha-causal]
+  <PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 9) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncutecompute_block_sparsityBlockSparsityKernel_object_at__BlockSparseTensorsmask_block_cntTensorgmemoi64i641mask_block_idxTensorgmemoi64i64i641full_block_'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+    exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+79 passed, 2 skipped, 321 warnings in 98.61s (0:01:38)

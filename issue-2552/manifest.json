@@ -1,0 +1,102 @@
+{
+  "README.md": {
+    "sha256": "46da018de2942c6520b5bfe4249e55528b11bac4065199b74c25075b144c44c6",
+    "bytes": 4999
+  },
+  "benchmark.csv": {
+    "sha256": "99aa4ba08d52d487f6c2db34aee24338c2e3d7c714634cde9c3457d9b594b35c",
+    "bytes": 1080
+  },
+  "benchmark.json": {
+    "sha256": "b50f7d1a63e845f0950d2c9ae724ffd321df67db6d187e6e3c05443f19e92c7e",
+    "bytes": 9486
+  },
+  "benchmark_rounds.csv": {
+    "sha256": "3adb7f88507bce088a98815a7859ef6a3a08e0945af2a3d19e0f6abb8e45946a",
+    "bytes": 7247
+  },
+  "benchmark_summary.json": {
+    "sha256": "2e98815392a64f482bf05157004c2ad870c3b1ed7a43094a6e5db46cb139a77d",
+    "bytes": 139
+  },
+  "correctness.jsonl": {
+    "sha256": "4103c8acfecc8e12f3e7e3076554c886c37e0ee82e9a6d222a32727601275690",
+    "bytes": 34840
+  },
+  "correctness_summary.csv": {
+    "sha256": "0d9d8a1c437de0f36cdc17ae8d5e1878ea04583b840ff378c68f0093a8268e61",
+    "bytes": 1013
+  },
+  "logs/baseline.log": {
+    "sha256": "b46c6aea76769a454b1a50fa3877624ad0c9bbac8fce0970e99c5118070ee133",
+    "bytes": 5239
+  },
+  "logs/baseline_original.log": {
+    "sha256": "779ab2148dd302fcda90f0a93c6f6d1a79dee8ece556955be5dfd8be4a648366",
+    "bytes": 4843
+  },
+  "logs/benchmark.log": {
+    "sha256": "e5b1eb9e4c0fe71fce7184860a47e63a5164a79df93e453ee2346f6d1103ede5",
+    "bytes": 9130
+  },
+  "logs/compile.log": {
+    "sha256": "80eb97bc661c66c796df12fb904fae3a929271c53d901874a8deb7b553ecb3d7",
+    "bytes": 6215
+  },
+  "logs/execution_edges.log": {
+    "sha256": "18d1c6ce3b036402886c13d8c48334bbffc7bef26269ae821e6c211af0b933f1",
+    "bytes": 200
+  },
+  "logs/execution_main.log": {
+    "sha256": "181e3743c454dc0b19a0e3329f967143d8320d177738f8733074589ae32effe5",
+    "bytes": 200
+  },
+  "logs/existing_backward.log": {
+    "sha256": "28863127c8d1ccb5d254649d426b114e2faa26d2372b267babd1b70960db310d",
+    "bytes": 7842
+  },
+  "logs/kernel_format.log": {
+    "sha256": "fd2299c9f1c6dc869070883e281051bfe93aacf66c1a3b0069f45b4aa410ca50",
+    "bytes": 25
+  },
+  "logs/kernel_lint.log": {
+    "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "bytes": 19
+  },
+  "logs/neutral.log": {
+    "sha256": "0a232ce3d4c4f92735f00289b0af120fc9b12f6396bfaa889e5472aba0266416",
+    "bytes": 5238
+  },
+  "logs/patched_artifacts.log": {
+    "sha256": "576f41e3f94f0bc01c99172ca0b8f728febb2beca3dbcc9aaae63cfacf869976",
+    "bytes": 6739
+  },
+  "logs/patched_original.log": {
+    "sha256": "6500d459c79c1feab3f08760ebdb00db5439eb2b98fae8081342d34270afc98a",
+    "bytes": 5202
+  },
+  "provenance.json": {
+    "sha256": "4b0ff3c50fecbd31bfe206ecfd681e865cf8e022b4f049a71d962566a57f79b3",
+    "bytes": 2638
+  },
+  "sass/baseline.txt": {
+    "sha256": "02e5832390fbffebd77328936351398593aea40b8cb35e704db494f5a22e9072",
+    "bytes": 99892
+  },
+  "sass/comparison.diff": {
+    "sha256": "ba99e73e4857b9dda835767e13b9ada781e68d7f96ac45e0fe8ca30a6ec05ade",
+    "bytes": 36164
+  },
+  "sass/load_counts.txt": {
+    "sha256": "1086f9fe0405b283233e84e5ad13779fb0d4d97f8f3be630b2a4617161a66072",
+    "bytes": 151
+  },
+  "sass/patched.txt": {
+    "sha256": "6220e3342da79996d0bc1353a325815fc0ff0f1b3e6800074075f155e5eb96f1",
+    "bytes": 99859
+  },
+  "test_results.json": {
+    "sha256": "f51696dbd42dab7285faff2cd464b55bb90f90e5a4b24915dc492fbd5bed0bc4",
+    "bytes": 517
+  }
+}

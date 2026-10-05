@@ -1,0 +1,27 @@
+{"revision": "neutral", "torch": "2.13.0+cu130", "cuda": "13.0", "gpu": "NVIDIA B200", "versions": {"nvidia-cutlass-dsl": "4.7.1", "apache-tvm-ffi": "0.1.11", "quack-kernels": "0.6.5"}}
+<PYTHON_ENV>/lib/python3.12/site-packages/torch/autograd/graph.py:979: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:408.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+<PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_fwd_sm100FlashAttentionForwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgm'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+  exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+<PYTHON_ENV>/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 21) cannot be converted to a JitArgument for function 'cutlass___call___flash_attncuteflash_bwd_sm100FlashAttentionBackwardSm100_object_at__Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorg'. Its type `<class 'flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+  exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+{"heads_kv": 4, "repeat": 0, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 1, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 2, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 3, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 4, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 5, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 6, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 7, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 8, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 4, "repeat": 9, "passed": false, "max_errors": {"out": 0.0031374474024213894, "dq": 0.002664250897237319, "dk": 0.003001117953222221, "dv": 1.1074400373727418}}
+{"heads_kv": 2, "repeat": 0, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 1, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 2, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 3, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 4, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 5, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 6, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 7, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 8, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
+{"heads_kv": 2, "repeat": 9, "passed": false, "exception": "AssertionError", "message": "sdV doesn't fit in sV storage allocation (2-CTA)"}
